@@ -6,7 +6,8 @@
 yum erase amanda-backup_server-3.3.8-1.rhel7.x86_64 -y
 yum erase amanda-backup_client-3.3.8-1.rhel7.x86_64 -y
 rm -rf /etc/amanda /amandaback /dumps
-rm -rf /var/log/amanda /var/lib/amandafind /|grep amanda|xargs rm -rf
+rm -rf /var/log/amanda /var/lib/amanda
+#find /|grep amanda|xargs rm -rf
 ```
 
 * Step 2:backup server install amanda-server
